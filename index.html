@@ -13,6 +13,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: .75rem;
+    background-color: brown !important; /* use !important to over-ride a bootstrap style */
   }
 
   .my-name{
@@ -33,6 +34,32 @@
 
   .txt-jxt{
     text-align: justify;
+  }
+
+  .style-btn{
+    background-color: brown;
+    border-color: brown;
+  }
+
+  .style-quote{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+  }
+
+  .style-f-btn{
+    background-color: brown;
+    border-color: brown;
+  }
+
+  .style-btn-search{
+    border-color: black;
+    color: black;
+  }
+
+  .style-btn-search:hover{
+    background-color: brown;
+    border-color: brown;
   }
   </style>
 </head>
@@ -58,7 +85,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Explore</button>
+          <button class="btn btn-outline-success style-btn-search" type="submit">Explore</button>
         </form>
       </div>
     </div>
@@ -90,7 +117,7 @@
         </div>
         <h3 class="fs-2 text-body-emphasis">Comprehensive Curriculum</h3>
         <p class="txt-jxt">Creative Tech doesn't just teach you the basics of coding. They offer a comprehensive curriculum that equips you with the skills to excel in both front-end and back-end development. This holistic approach ensures you understand the complete development cycle, allowing you to build dynamic and interactive web applications from the ground up.</p>
-        <a href="#" class="icon-link">
+        <a href="#" class="icon-link style-quote">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right" height="15">
         </a>
@@ -101,7 +128,7 @@
         </div>
         <h3 class="fs-2 text-body-emphasis"> Project-Based Learning</h3>
         <p class="txt-jxt">Traditional coding bootcamps can be heavy on theory. Creative Tech focuses on project-based learning, giving you practical experience by working on real-world projects. This hands-on approach solidifies your understanding of the concepts and prepares you to tackle coding challenges in a professional setting with confidence.</p>
-        <a href="#" class="icon-link">
+        <a href="#" class="icon-link style-quote">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right" height="15">
         </a>
@@ -112,7 +139,7 @@
         </div>
         <h3 class="fs-2 text-body-emphasis">Mentorship</h3>
         <p class="txt-jxt">At Creative Tech, you'll learn from experienced instructors who are not only passionate about coding but also actively engaged in the tech industry. They bring their real-world knowledge and connections to the classroom, providing valuable insights and career guidance.  This mentorship extends beyond the classroom, helping you navigate the job market and land your dream developer role.</p>
-        <a href="#" class="icon-link">
+        <a href="#" class="icon-link style-quote">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right" height="15">
         </a>
@@ -192,7 +219,7 @@
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
               <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+              <button class="btn btn-primary style-f-btn" type="button">Subscribe</button>
             </div>
           </form>
         </div>
